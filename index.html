@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 3</title>
+    <style>
+        /* تصميم القائمة الأساسية */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* الزر الأساسي */
+        .dropdown a {
+            text-decoration: none;
+            padding: 24px 26px;
+            background-color: green;
+            color: white;
+            font-size: 26px;
+            display: inline-block;
+        }
+
+        
+
+        /* تصميم القائمة المنسدلة */
+         .dropdown-menu {
+            display: none;
+            position: absolute;
+            min-width: 250px;
+            background-color: #f1f1f1;
+            z-index: 1000;
+        }
+
+        .dropdown-menu a {
+            text-decoration: none;
+            display: block;
+            padding: 24px 26px;
+            color: #333;
+            background-color: transparent;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ddd;
+        }
+
+        /* إظهار القائمة عند تمرير الماوس */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        } 
+
+        input[type=text] ,select{
+
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        fieldset{
+            background-color: lightgray;
+            width: 600px;
+            height: 300px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+        }
+
+        input[type=submit]{
+
+           
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <a href="#">Dropdown</a>
+        <div class="dropdown-menu">
+            <a href="#link1">Link 1</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
+        </div>
+    </div>
+
+<br><br><br><br><br><br>
+
+    <form>
+
+    <fieldset>
+
+        <label>First Name</label>
+        <input type="text" placeholder="Your name..">
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Your last name..">
+
+        <label>Country</label>
+        <select>
+
+            <option value="Jordan">Australia</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Jordan">KSA</option>
+            <option value="Jordan">Palestain</option>
+            <option value="Jordan">Kuwait</option>
+            <option value="Jordan">Oman</option>
+            <option value="Jordan">Iraq</option>
+            <option value="Jordan">Sweden</option>
+            <option value="Jordan">Japan</option>
+
+
+        </select>
+
+        <input type="submit">
+
+        
+
+
+
+
+
+    </fieldset>
+
+
+    </form>
+</body>
+</html>
